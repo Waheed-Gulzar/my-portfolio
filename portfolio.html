@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Waheed Gulzar | Full Stack Developer & Web Designer Portfolio</title>
-  
+  <link rel="stylesheet" href="styles.css">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /><stop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad1)'/><text x='50' y='60' text-anchor='middle' fill='white' font-family='monospace' font-size='30' font-weight='bold'>WG</text></svg>">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /><stop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23grad1)'/><text x='50' y='60' text-anchor='middle' fill='white' font-family='monospace' font-size='30' font-weight='bold'>WG</text></svg>">
@@ -15,7 +15,8 @@
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
@@ -52,8 +53,7 @@
       <div class="hidden md:flex items-center space-x-8">
         <a href="#home" class="nav-link hover:text-cyan-400 transition-colors">Home</a>
         <a href="#about" class="nav-link hover:text-cyan-400 transition-colors">About</a>
-        <a href="#projects" class="nav-link hover:text-cyan-400 transition-colors">Projects</a>
-        <a href="#skills" class="nav-link hover:text-cyan-400 transition-colors">Skills</a>
+        <a href="#Project" class="nav-link hover:text-cyan-400 transition-colors">Project</a>
         <a href="#contact" class="nav-link hover:text-cyan-400 transition-colors">Contact</a>
       </div>
 
@@ -71,8 +71,7 @@
         <div class="flex flex-col space-y-4">
           <a href="#home" class="mobile-nav-link text-white hover:text-cyan-400 transition-all duration-300 py-2 border-b border-white/10">Home</a>
           <a href="#about" class="mobile-nav-link text-white hover:text-cyan-400 transition-all duration-300 py-2 border-b border-white/10">About</a>
-          <a href="#projects" class="mobile-nav-link text-white hover:text-cyan-400 transition-all duration-300 py-2 border-b border-white/10">Projects</a>
-          <a href="#skills" class="mobile-nav-link text-white hover:text-cyan-400 transition-all duration-300 py-2 border-b border-white/10">Skills</a>
+          <a href="#skills" class="mobile-nav-link text-white hover:text-cyan-400 transition-all duration-300 py-2 border-b border-white/10">Project</a>
           <a href="#contact" class="mobile-nav-link text-white hover:text-cyan-400 transition-all duration-300 py-2">Contact</a>
           <a href="#" id="download-cv-mobile" class="mt-4 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 rounded-lg text-white text-center transition-all duration-300 flex items-center justify-center">
             <i class="fas fa-download mr-2"></i>
@@ -104,9 +103,6 @@
         Specialized in MERN stack development, DevOps, and creating exceptional user experiences.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6 md:mt-8 px-4">
-        <a href="#projects" class="px-6 md:px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 text-sm md:text-base">
-          View My Work
-        </a>
         <a href="#contact" class="px-6 md:px-8 py-3 rounded-full border border-cyan-400 hover:bg-cyan-400 hover:text-black transition-all duration-300 text-sm md:text-base">
           Get In Touch
         </a>
@@ -235,169 +231,88 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="relative z-10 py-24">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16 fade-in-up">
-        <h2 class="text-5xl font-bold mb-6 gradient-text">Featured Projects</h2>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-          A showcase of my recent work, highlighting creativity, technical excellence, and user-centered design
-        </p>
-      </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div class="project-card rounded-2xl p-6 card-hover fade-in-up">
-          <div class="project-image-container relative overflow-hidden rounded-xl mb-6">
-            <img src="bilingual.png" 
-                 alt="E-commerce Platform" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <div class="project-link-overlay">
-              <a href="https://github.com/Waheed-Gulzar/Bilingual-healthcare.git" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt mr-2"></i>
-                View Project
-              </a>
-            </div>
-          </div>
-          <h3 class="text-2xl font-semibold mb-3 gradient-text">Bilingual Healthcare Platform</h3>
-          <p class="text-gray-300 mb-4">A Website Designed to Help Patients to book Appointments with desired Doctors</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 text-sm bg-cyan-500/20 text-cyan-300 rounded-full">React</span>
-            <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full">Node.js</span>
-            <span class="px-3 py-1 text-sm bg-teal-500/20 text-teal-300 rounded-full">MongoDB</span>
-          </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="project-card rounded-2xl p-6 card-hover fade-in-up">
-          <div class="project-image-container relative overflow-hidden rounded-xl mb-6">
-            <img src="chess.png" 
-                 alt="Analytics Dashboard" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <div class="project-link-overlay">
-              <a href="https://github.com/Waheed-Gulzar/chess.git" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt mr-2"></i>
-                View Project
-              </a>
-            </div>
-          </div>
-          <h3 class="text-2xl font-semibold mb-3 gradient-text">Chess Game</h3>
-          <p class="text-gray-300 mb-4">A two player Chess Game Developed Using Pygame</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 text-sm bg-cyan-500/20 text-cyan-300 rounded-full">Python</span>
-            <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full">Pygame</span>
-            <span class="px-3 py-1 text-sm bg-teal-500/20 text-teal-300 rounded-full">Game Development</span>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card rounded-2xl p-6 card-hover fade-in-up">
-          <div class="project-image-container relative overflow-hidden rounded-xl mb-6">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                 alt="Mobile App" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <div class="project-link-overlay">
-              <a href="https://github.com/Waheed-Gulzar/SCD.git" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt mr-2"></i>
-                View Project
-              </a>
-            </div>
-          </div>
-          <h3 class="text-2xl font-semibold mb-3 gradient-text">Simple Website and DevOps</h3>
-          <p class="text-gray-300 mb-4">A Project that showcases my abilities in DevOps</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 text-sm bg-cyan-500/20 text-cyan-300 rounded-full">Minikube</span>
-            <span class="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full">GitHub Actions</span>
-            <span class="px-3 py-1 text-sm bg-teal-500/20 text-teal-300 rounded-full">Docker</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Skills Section -->
   <section id="skills" class="relative z-10 py-24">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16 fade-in-up">
-        <h2 class="text-5xl font-bold mb-6 gradient-text">Skills & Expertise</h2>
+        <h2 class="text-5xl font-bold mb-6 gradient-text">Projects</h2>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-          A comprehensive toolkit of modern technologies and frameworks for building exceptional digital experiences
+          A showcase of my recent work demonstrating my skills in full-stack development, DevOps, and workflow automation.
         </p>
       </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-        <!-- Frontend -->
-        <div class="glass-effect p-6 rounded-2xl fade-in-up">
-          <div class="text-3xl mb-4 text-cyan-400">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 gradient-text">Frontend</h3>
-          <div class="space-y-3">
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">React.js</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">HTML</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">TypeScript</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Tailwind CSS</div>
-          </div>
-        </div>
 
-        <!-- Backend -->
-        <div class="glass-effect p-6 rounded-2xl fade-in-up">
-          <div class="text-3xl mb-4 text-purple-400">
-            <i class="fas fa-server"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 gradient-text">Backend</h3>
-          <div class="space-y-3">
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Node.js</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Python</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Express.js</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">MongoDB</div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="glass-effect p-6 rounded-2xl fade-in-up">
-          <div class="text-3xl mb-4 text-orange-400">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 gradient-text">Languages</h3>
-          <div class="space-y-3">
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">C++</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Java</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Python</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">C#</div>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="glass-effect p-6 rounded-2xl fade-in-up">
-          <div class="text-3xl mb-4 text-teal-400">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 gradient-text">Tools</h3>
-          <div class="space-y-3">
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Git & GitHub</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Docker</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Kubernetes</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Figma</div>
-          </div>
-        </div>
-
-        <!-- Design -->
-        <div class="glass-effect p-6 rounded-2xl fade-in-up">
-          <div class="text-3xl mb-4 text-pink-400">
-            <i class="fas fa-palette"></i>
-          </div>
-          <h3 class="text-xl font-semibold mb-4 gradient-text">Design</h3>
-          <div class="space-y-3">
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">UI/UX Design</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Prototyping</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Responsive Design</div>
-            <div class="skill-badge px-4 py-2 rounded-lg text-black text-sm">Animation</div>
-          </div>
-        </div>
+    <div class="cards">
+    <!-- Card 1 -->
+    <input type="radio" id="radio-1" name="radio-card" checked>
+    <article class="card" style="--angle:4deg">
+      <img class="card-img" src="mern.png">
+      <div class="card-data">
+        <span class="card-num">1/4</span>
+        <h2><a href="https://github.com/Waheed-Gulzar/Bilingual-healthcare.git" target="_blank" class="project-link">Bilingual Healthcare Platform</a></h2>
+        <p>
+          A Website designed to help patients book appointments with desired doctors.
+        </p>
+        <footer>
+          <label for="radio-3" aria-label="Previous">&#10094;</label>
+          <label for="radio-2" aria-label="Next">&#10095;</label>
+        </footer>
       </div>
-    </div>
-  </section>
+    </article>
+
+    <!-- Card 2 -->
+    <input type="radio" id="radio-2" name="radio-card">
+    <article class="card" style="--angle:-8deg">
+      <img class="card-img" src="pygame.png">
+      <div class="card-data">
+        <span class="card-num">2/4</span>
+        <h2><a href="https://github.com/Waheed-Gulzar/chess.git" target="_blank" class="project-link">Chess Game</a></h2>
+        <p>
+          A two-player chess game developed using Pygame with the ability to load game states.
+        </p>
+        <footer>
+          <label for="radio-1" aria-label="Previous">&#10094;</label>
+          <label for="radio-3" aria-label="Next">&#10095;</label>
+        </footer>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <input type="radio" id="radio-3" name="radio-card">
+    <article class="card" style="--angle:-7deg">
+      <img class="card-img" src="n8n.png">
+      <div class="card-data">
+        <span class="card-num">3/4</span>
+        <h2 class="project">n8n Workflow Creation </h2>
+        <p>
+          Created automated workflows using n8n to streamline repetitive tasks and improve efficiency.
+        </p>
+        <footer>
+          <label for="radio-2" aria-label="Previous">&#10094;</label>
+          <label for="radio-1" aria-label="Next">&#10095;</label>
+        </footer>
+      </div>
+    </article>
+    <!-- Card 4 -->
+    <input type="radio" id="radio-3" name="radio-card">
+    <article class="card" style="--angle:-7deg">
+      <img class="card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+      <div class="card-data">
+        <span class="card-num">4/4</span>
+        <h2><a href="https://github.com/Waheed-Gulzar/SCD.git" target="_blank" class="project-link">Simple Website and DevOps</a></h2>
+        <p>
+          A project that showcases my abilities in DevOps using Docker, Minikube, and GitHub Actions.
+        </p>
+        <footer>
+          <label for="radio-2" aria-label="Previous">&#10094;</label>
+          <label for="radio-1" aria-label="Next">&#10095;</label>
+        </footer>
+      </div>
+    </article>
+  </div>
+</section>
+
 
   <!-- Testimonials Section 
   <section class="relative z-10 py-24 bg-gradient-to-r from-blue-900/10 via-purple-900/10 to-teal-900/10">
@@ -491,10 +406,6 @@
             <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 rounded-xl text-white font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               <i class="fas fa-rocket mr-2"></i>
               Start Your Project
-            </a>
-            <a href="#projects" class="px-8 py-4 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
-              <i class="fas fa-eye mr-2"></i>
-              View Portfolio
             </a>
           </div>
           
@@ -1447,6 +1358,56 @@
       opacity: 0;
       transition: opacity 0.5s ease;
     }
+    .view-project {
+      margin-top: 10px;
+    }
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      background: #24292e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .github-link:hover {
+      background: #2c974b;
+    }
+    .github-link i {
+      margin-right: 8px;
+    }
+    .project-link {
+      color: #2c974b;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .project {
+      color: #2c974b;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .project-link:hover {
+      color: #0366d6;
+      text-decoration: underline;
+    }
+    .project-link::after {
+      content: '🔗';
+      font-size: 0.8em;
+      margin-left: 5px;
+      
+    }
+  </style>
+</body>
+</html>
+</body>
+</html>
+    }
+  </style>
+</body>
+</html>
   </style>
 </body>
 </html>
